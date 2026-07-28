@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mage — Trade Stocks, Crypto &amp; Prediction Markets by Text</title>
+  <meta name="description" content="Mage is the AI trading companion that lives in your messages. Trade stocks, crypto, and prediction markets from a single text thread. No dashboards, no apps — just text." />
+  <meta property="og:title" content="Trade everything by text." />
+  <meta property="og:description" content="Tokenized stocks, memecoins, perps, and predictions — one text away. Built on Robinhood Chain." />
+  <meta property="og:url" content="https://www.ma.ge" />
+  <meta property="og:site_name" content="Mage" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Trade everything by text." />
+  <meta name="twitter:description" content="Tokenized stocks, memecoins, perps, and predictions — one text away. Built on Robinhood Chain." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAV PILL -->
+  <div class="nav-wrapper">
+    <nav class="nav-pill" aria-label="Primary">
+      <a href="#top" class="nav-logo">
+        <span class="logo-icon">✦</span>
+        <span class="wordmark">Mage</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#markets" class="nav-link">Markets</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+      </ul>
+      <button class="btn-primary" id="nav-try-btn" onclick="scrollToSection('cta')">Try Mage</button>
+    </nav>
+  </div>
+
+  <!-- MAIN SCROLL CONTAINER -->
+  <div class="scroll-container" id="scroll-container">
+
+    <!-- SECTION 1: HERO -->
+    <section class="snap-section hero-section" id="top">
+      <div class="l-container hero-grid">
+        <div class="hero-text">
+          <div class="hero-badges">
+            <span class="badge-beta">
+              <span class="badge-dot"></span>Private beta
+            </span>
+            <span class="badge-chain">
+              <svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M4.5 0L9 4.5H6.75V10.5H2.25V4.5H0L4.5 0Z" fill="#1DB954"/></svg>
+              Built on Robinhood Chain
+            </span>
+          </div>
+          <h1 class="hero-headline">
+            Trade <span class="accent-word" id="rotating-word">everything</span><br>
+            <span class="accent-underline">by text</span>.
+          </h1>
+          <p class="hero-sub">Mage is the AI agent that trades every market in your messages — tokenized stocks, memecoins, perps, and predictions. Text what you want; it executes.</p>
+          <div class="hero-actions">
+            <button class="btn-primary btn-lg" onclick="scrollToSection('cta')">Try Mage</button>
+            <a href="#stocks" class="btn-ghost btn-lg">See how it works</a>
+          </div>
+        </div>
+        <div class="hero-phone-card">
+          <div class="phone-header">
+            <div class="phone-back">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg>
+              <span class="phone-count">50</span>
+            </div>
+            <div class="phone-contact">
+              <div class="phone-avatar">✦</div>
+              <span class="phone-name">Mage</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </div>
+            <div class="phone-video">
+              <svg width="17" height="12" viewBox="0 0 17 12" fill="currentColor"><rect x="0" y="1" width="12" height="10" rx="3"/><path d="M14 4.2 17 2v8l-3-2.2V4.2Z"/></svg>
+            </div>
+          </div>
+          <div class="phone-messages" id="hero-messages">
+            <!-- Messages injected by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: STOCKS -->
+    <section class="snap-section feature-section" id="stocks">
+      <header class="feature-header">
+        <h2>Trades stocks. On a Sunday.</h2>
+        <p class="feature-sub">
+          Tokenized equities on
+          <span class="chain-badge">
+            <svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M4.5 0L9 4.5H6.75V10.5H2.25V4.5H0L4.5 0Z" fill="#1DB954"/></svg>
+            <span>Robinhood Chain</span>
+          </span> — 24/7
+        </p>
+      </header>
+      <div class="feature-chat-area">
+        <div class="chat-mock" data-section="stocks">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: PERPS -->
+    <section class="snap-section feature-section" id="perps">
+      <header class="feature-header">
+        <h2>Perps, by text</h2>
+        <p class="feature-sub">
+          Longs and shorts on
+          <span class="chain-badge">
+            <span class="lighter-dot">L</span>
+            <span>Lighter</span>
+          </span> — one message
+        </p>
+      </header>
+      <div class="feature-chat-area">
+        <div class="chat-mock" data-section="perps">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: MEMES -->
+    <section class="snap-section feature-section" id="memes">
+      <header class="feature-header">
+        <h2>Don't know what to buy? It does.</h2>
+        <p class="feature-sub">
+          Live movers on
+          <span class="chain-badge">
+            <svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M4.5 0L9 4.5H6.75V10.5H2.25V4.5H0L4.5 0Z" fill="#1DB954"/></svg>
+            <span>Robinhood Chain</span>
+          </span> — memecoins by text
+        </p>
+      </header>
+      <div class="feature-chat-area">
+        <div class="chat-mock" data-section="memes">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: PREDICTIONS -->
+    <section class="snap-section feature-section" id="predictions">
+      <header class="feature-header">
+        <h2>Call it. Get paid.</h2>
+        <p class="feature-sub">
+          <span class="badge-alpha">Early alpha</span>
+          Prediction markets on
+          <strong>Polymarket</strong> — funded from any chain
+        </p>
+      </header>
+      <div class="feature-chat-area">
+        <div class="chat-mock" data-section="predictions">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: BRIDGE -->
+    <section class="snap-section feature-section" id="bridge">
+      <header class="feature-header">
+        <h2>Fund anything, from anywhere.</h2>
+        <p class="feature-sub">Tokens, perps, predictions — paid from wherever your cash sits</p>
+      </header>
+      <div class="feature-chat-area">
+        <div class="chat-mock" data-section="bridge">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: PORTFOLIO -->
+    <section class="snap-section feature-section" id="portfolio">
+      <header class="feature-header">
+        <h2>The whole portfolio in one text</h2>
+        <p class="feature-sub">Every chain, every venue — one card</p>
+      </header>
+      <div class="feature-chat-area">
+        <div class="chat-mock" data-section="portfolio">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: CASHOUT -->
+    <section class="snap-section feature-section" id="cashout">
+      <header class="feature-header">
+        <h2>Your money is never stuck</h2>
+        <p class="feature-sub">
+          Take profits, empty your perps — cash lands on
+          <span class="chain-badge">
+            <svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M4.5 0L9 4.5H6.75V10.5H2.25V4.5H0L4.5 0Z" fill="#1DB954"/></svg>
+            <span>Robinhood Chain</span>
+          </span>
+        </p>
+      </header>
+      <div class="feature-chat-area">
+        <div class="chat-mock" data-section="cashout">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9: CTA / TEXT BACK -->
+    <section class="snap-section cta-section" id="cta">
+      <header class="feature-header">
+        <h2>Texts back in seconds</h2>
+      </header>
+      <div class="cta-content" id="cta-content">
+        <div class="trade-cards-cloud">
+          <div class="trade-card" style="top:2%; left:0;">
+            <div class="tc-icon" style="background:#e7c98a;">🐱</div>
+            <div class="tc-info">
+              <div class="tc-row"><span class="tc-name">$CASHCAT</span><span class="tc-amount">$50.00</span></div>
+              <div class="tc-row"><span class="tc-type">Memecoin</span><span class="tc-change green">+38%</span></div>
+            </div>
+          </div>
+          <div class="trade-card" style="top:0; right:0;">
+            <div class="tc-icon" style="background:#2e8b57;">N</div>
+            <div class="tc-info">
+              <div class="tc-row"><span class="tc-name">NVDA</span><span class="tc-amount">$200.00</span></div>
+              <div class="tc-row"><span class="tc-type">Tokenized stock</span><span class="tc-change green">Filled</span></div>
+            </div>
+          </div>
+          <div class="trade-card" style="bottom:15%; left:0;">
+            <div class="tc-icon" style="background:#7c5cff;">◎</div>
+            <div class="tc-info">
+              <div class="tc-row"><span class="tc-name">Portfolio</span><span class="tc-amount">$68.52</span></div>
+              <div class="tc-row"><span class="tc-type">Spot · Perps</span><span class="tc-change green">+$0.04</span></div>
+            </div>
+          </div>
+          <div class="trade-card" style="bottom:19%; right:0;">
+            <div class="tc-icon" style="background:#d6568f;">✦</div>
+            <div class="tc-info">
+              <div class="tc-row"><span class="tc-name">Fed cut · July</span><span class="tc-amount">YES 62¢</span></div>
+              <div class="tc-row"><span class="tc-type">Prediction</span></div>
+            </div>
+          </div>
+          <div class="tc-message-bubble">How's my portfolio?</div>
+          <div class="tc-avatar">✦</div>
+        </div>
+        <button class="text-mage-btn-lg" onclick="scrollToSection('top')">
+          <span class="tmb-icon">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="#fff"><path d="M12 3C6.5 3 2 6.9 2 11.7c0 2.8 1.5 5.2 3.9 6.8-.2 1-.8 2.4-1.7 3.3 1.7-.2 3.4-1 4.5-1.8 1 .3 2.1.4 3.3.4 5.5 0 10-3.9 10-8.7S17.5 3 12 3Z"/></svg>
+          </span>
+          <span>Text Mage</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SECTION 10: HOW IT WORKS + FAQ + FOOTER (non-snap) -->
+    <section class="snap-section static-section" id="markets">
+
+      <!-- HOW IT WORKS -->
+      <section class="how-section" id="how-it-works">
+        <div class="l-container">
+          <div class="how-intro">
+            <h2 class="section-title">Up and running in <span class="accent-underline">three texts</span>.</h2>
+            <p class="section-sub">If you can send a message, you can trade with Mage.</p>
+          </div>
+          <ol class="steps-grid">
+            <li class="step-item">
+              <div class="step-num-row">
+                <span class="step-num">01</span>
+                <span class="step-line"></span>
+              </div>
+              <h3>Add Mage in Messages</h3>
+              <p>Save Mage as a contact and say hi. Your Robinhood Chain wallet spins up instantly — no seed phrase, no forms, no downloads.</p>
+              <div class="step-card">
+                <div class="bubble-wrap">
+                  <div class="bubble bubble-sent">Hey Mage</div>
+                  <div class="bubble bubble-recv">Welcome. Your wallet's live on Robinhood Chain.</div>
+                </div>
+              </div>
+            </li>
+            <li class="step-item">
+              <div class="step-num-row">
+                <span class="step-num">02</span>
+                <span class="step-line"></span>
+              </div>
+              <h3>Ask anything</h3>
+              <p>Quotes, research, your portfolio — across every market, in plain English. Mage answers in seconds.</p>
+              <div class="step-card">
+                <div class="bubble-wrap">
+                  <div class="bubble bubble-sent">How's NVDA doing?</div>
+                  <div class="bubble bubble-recv">NVDA token $128.40, +2.1% — market's closed, chain isn't. Want a quick read?</div>
+                </div>
+              </div>
+            </li>
+            <li class="step-item">
+              <div class="step-num-row">
+                <span class="step-num">03</span>
+                <span class="step-line"></span>
+              </div>
+              <h3>Trade by text</h3>
+              <p>Place trades, set alerts, and manage positions — all without leaving the conversation.</p>
+              <div class="step-card">
+                <div class="bubble-wrap">
+                  <div class="bubble bubble-sent">Buy $200 NVDA, alert me at $140</div>
+                  <div class="bubble bubble-recv">Done. I'll ping you at $140.</div>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="faq-section" id="faq">
+        <div class="l-container">
+          <div class="faq-grid">
+            <div class="faq-intro">
+              <h2 class="section-title">Common questions</h2>
+              <p class="section-sub">Everything you might want to know before your first text.</p>
+            </div>
+            <div class="faq-list">
+              <div class="faq-row" data-open="true">
+                <button class="faq-btn" aria-expanded="true" aria-controls="faq-panel-0">
+                  <span>What can I trade with Mage?</span>
+                  <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+                <div class="faq-panel" id="faq-panel-0" role="region">
+                  <p>Everything live on Robinhood Chain: tokenized stocks and ETFs (24/7), memecoins, perpetuals, and prediction markets — all from a single text thread.</p>
+                </div>
+              </div>
+              <div class="faq-row" data-open="false">
+                <button class="faq-btn" aria-expanded="false" aria-controls="faq-panel-1">
+                  <span>How do I get started?</span>
+                  <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+                <div class="faq-panel" id="faq-panel-1" role="region">
+                  <p>Join the waitlist, add Mage as a contact in Messages, then text to spin up your self-custodied wallet. There's no app to download and no seed phrase to manage.</p>
+                </div>
+              </div>
+              <div class="faq-row" data-open="false">
+                <button class="faq-btn" aria-expanded="false" aria-controls="faq-panel-2">
+                  <span>Which devices are supported?</span>
+                  <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+                <div class="faq-panel" id="faq-panel-2" role="region">
+                  <p>Mage runs natively in Messages on iPhone (iOS 16+). Telegram support is next, starting with international users.</p>
+                </div>
+              </div>
+              <div class="faq-row" data-open="false">
+                <button class="faq-btn" aria-expanded="false" aria-controls="faq-panel-3">
+                  <span>How does Mage execute trades?</span>
+                  <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+                <div class="faq-panel" id="faq-panel-3" role="region">
+                  <p>Onchain: stock tokens through Robinhood Chain's canonical venues, spot through Uniswap, perps through Lighter, and predictions on Polymarket and chain-native venues. Mage prepares each transaction and executes only after you confirm — every fill is reported in the thread.</p>
+                </div>
+              </div>
+              <div class="faq-row" data-open="false">
+                <button class="faq-btn" aria-expanded="false" aria-controls="faq-panel-4">
+                  <span>What can the agent do on its own?</span>
+                  <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+                <div class="faq-panel" id="faq-panel-4" role="region">
+                  <p>Mage reads your intent, researches, and prepares every trade — but it never moves money on its own. It previews each order first — size, price, liquidation, and honeypot/rug checks — and only executes when you confirm.</p>
+                </div>
+              </div>
+              <div class="faq-row" data-open="false">
+                <button class="faq-btn" aria-expanded="false" aria-controls="faq-panel-5">
+                  <span>Is my money safe?</span>
+                  <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+                <div class="faq-panel" id="faq-panel-5" role="region">
+                  <p>Your wallet is an embedded wallet secured by Privy — keys are generated and held in Privy's hardened key infrastructure, never exposed to Mage's servers or your chat thread.</p>
+                </div>
+              </div>
+              <div class="faq-row" data-open="false">
+                <button class="faq-btn" aria-expanded="false" aria-controls="faq-panel-6">
+                  <span>What does it cost?</span>
+                  <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+                <div class="faq-panel" id="faq-panel-6" role="region">
+                  <p>The Mage chat is free during beta. You pay only network fees — pennies on Robinhood Chain — no subscription, no hidden costs.</p>
+                </div>
+              </div>
+              <div class="faq-row" data-open="false">
+                <button class="faq-btn" aria-expanded="false" aria-controls="faq-panel-7">
+                  <span>Can I set alerts?</span>
+                  <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+                <div class="faq-panel" id="faq-panel-7" role="region">
+                  <p>Yes. Set price, percentage, momentum, or real-world event triggers, all by text. Mage messages you the moment they hit.</p>
+                </div>
+              </div>
+              <div class="faq-row" data-open="false">
+                <button class="faq-btn" aria-expanded="false" aria-controls="faq-panel-8">
+                  <span>Can I trade with leverage?</span>
+                  <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+                <div class="faq-panel" id="faq-panel-8" role="region">
+                  <p>Yes — perpetuals on major assets through Lighter. Mage always shows your liquidation price before you confirm.</p>
+                </div>
+              </div>
+              <div class="faq-row" data-open="false">
+                <button class="faq-btn" aria-expanded="false" aria-controls="faq-panel-9">
+                  <span>Who can trade stock tokens?</span>
+                  <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+                <div class="faq-panel" id="faq-panel-9" role="region">
+                  <p>Robinhood Chain stock tokens aren't available to US persons and are restricted in a few other jurisdictions. US users can trade crypto and prediction markets; stock tokens are available across 120+ supported countries.</p>
+                </div>
+              </div>
+              <div class="faq-row" data-open="false">
+                <button class="faq-btn" aria-expanded="false" aria-controls="faq-panel-10">
+                  <span>Is Mage affiliated with Robinhood?</span>
+                  <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+                <div class="faq-panel" id="faq-panel-10" role="region">
+                  <p>No. Mage is an independent application built on Robinhood Chain, the public Layer 2 — the same way apps build on Base or Solana. Robinhood is a trademark of Robinhood Markets, Inc.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER CTA BANNER -->
+      <section class="footer-cta-section">
+        <div class="l-container">
+          <div class="footer-cta-card">
+            <div class="footer-cta-text">
+              <h2>Your markets are one text away.</h2>
+              <p>Join the early traders running tokenized stocks, memecoins, and prediction markets on Robinhood Chain — straight from their messages.</p>
+            </div>
+            <div class="footer-cta-action">
+              <button class="btn-primary btn-lg" onclick="scrollToSection('top')">Try Mage</button>
+              <p class="footer-cta-note">Free during beta · No app to download</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="site-footer">
+        <div class="l-container">
+          <div class="footer-top">
+            <div class="footer-brand">
+              <div class="footer-logo">
+                <span class="logo-icon">✦</span>
+                <span class="wordmark">Mage</span>
+              </div>
+              <p class="footer-desc">The AI agent that lives in your messages — tokenized stocks, memecoins, perps, and predictions on Robinhood Chain, all by text.</p>
+              <span class="footer-chain">
+                <svg width="9" height="12" viewBox="0 0 9 12" fill="none"><path d="M4.5 0L9 4.5H6.75V10.5H2.25V4.5H0L4.5 0Z" fill="#1DB954"/></svg>
+                Built on Robinhood Chain
+              </span>
+              <button class="ca-btn" id="ca-btn" aria-label="Copy contract address">
+                <span class="ca-label">CA</span>
+                <span class="ca-addr">0xdd19509de0e2aa000d7ce5b3e0df638178b6f3c2</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+              </button>
+            </div>
+            <nav class="footer-nav" aria-label="Footer">
+              <a href="#markets" class="nav-link">Markets</a>
+              <a href="#how-it-works" class="nav-link">How it works</a>
+              <a href="#faq" class="nav-link">FAQ</a>
+              <a href="https://x.com/magetrading" target="_blank" rel="noopener noreferrer" aria-label="Mage on X" class="nav-link">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+            </nav>
+          </div>
+          <p class="footer-disclaimer">Mage is an independent application built on Robinhood Chain and is not affiliated with, endorsed by, or sponsored by Robinhood Markets, Inc. Stock tokens are not available to US persons. Nothing here is investment advice.</p>
+          <div class="footer-bottom">
+            <p>© 2026 Mage</p>
+            <p>Trade whatever, wherever, whenever.</p>
+          </div>
+        </div>
+      </footer>
+
+    </section>
+
+  </div><!-- /scroll-container -->
+
+  <!-- FLOATING TEXT MAGE BUTTON -->
+  <div class="float-btn-wrap" id="float-btn-wrap">
+    <button class="text-mage-btn" onclick="scrollToSection('top')">
+      <span class="tmb-icon">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="#fff"><path d="M12 3C6.5 3 2 6.9 2 11.7c0 2.8 1.5 5.2 3.9 6.8-.2 1-.8 2.4-1.7 3.3 1.7-.2 3.4-1 4.5-1.8 1 .3 2.1.4 3.3.4 5.5 0 10-3.9 10-8.7S17.5 3 12 3Z"/></svg>
+      </span>
+      <span>Text Mage</span>
+    </button>
+  </div>
+
+  <!-- RIGHT SIDE DOT NAV -->
+  <div class="side-nav" id="side-nav">
+    <button class="side-dot active" data-label="Stocks" data-target="stocks" aria-label="Trades stocks. On a Sunday."></button>
+    <button class="side-dot" data-label="Perps" data-target="perps" aria-label="Perps, by text"></button>
+    <button class="side-dot" data-label="Memecoins" data-target="memes" aria-label="Don't know what to buy? It does."></button>
+    <button class="side-dot" data-label="Predictions" data-target="predictions" aria-label="Call it. Get paid."></button>
+    <button class="side-dot" data-label="Any chain" data-target="bridge" aria-label="Fund anything, from anywhere."></button>
+    <button class="side-dot" data-label="Portfolio" data-target="portfolio" aria-label="The whole portfolio in one text"></button>
+    <button class="side-dot" data-label="Cash out" data-target="cashout" aria-label="Your money is never stuck"></button>
+    <button class="side-dot" data-label="Try it" data-target="cta" aria-label="Texts back in seconds"></button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
